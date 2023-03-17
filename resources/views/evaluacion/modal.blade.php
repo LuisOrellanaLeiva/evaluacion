@@ -38,10 +38,6 @@
                 <label for="prom" class="col-form-label">Nota final:</label>
                 <input id="prom" class="form-control" type="text" aria-label="Disabled input example" disabled readonly value="">
               </div>
-
-
-
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

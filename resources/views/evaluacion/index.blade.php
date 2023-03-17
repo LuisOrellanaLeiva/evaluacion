@@ -3,16 +3,13 @@
 <div class="container">
     <h3 class="text-center mb-3">Colaboradores asociados</h3>
     <br>
-    <!-- Button trigger modal -->
-    {{-- <button type="button" class="btn btn-primary mt-2 mb-3" data-bs-toggle="modal" data-bs-target="#modalBookCreate">
-        Agregar
-    </button> --}}
+    @if ($message = Session::get('success'))
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ $message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
 
-    {{-- @if ($message = Session::get('success'))
-                        <div class="alert alert-success">
-                            <p>{{ $message }}</p>
-                        </div>
-    @endif --}}
     <table class="table table-striped table-bordered mt-4" style="width:100%" id="profiles">
 
         <thead class="thead">

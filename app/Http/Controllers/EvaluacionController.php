@@ -45,7 +45,7 @@ class EvaluacionController extends Controller
         $evaluado = Evaluation::where([['cerrada', false], ['profile_id', $request->profile_id]])->first();
         $evaluado->update(array_merge($request->all(), ['cerrada' => true]));
 
-        return redirect()->route('evaluacion.index');
+        return redirect()->route('evaluacion.index')->with('success', 'Evaluacion realizada con exito!');
     }
 
     public function evaluaciones(){
